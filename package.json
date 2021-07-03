@@ -1,0 +1,35 @@
+{
+    "name": "@devmoath/ar-num-to-en-num",
+    "version": "0.1.0",
+    "description": "Convert Arabic numbers to English numbers",
+    "license": "MIT",
+    "author": "Moath <moath.alhajrii@gmail.com> (https://moath.dev/)",
+    "homepage": "https://github.com/DevMoath/ar-num-to-en-num#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/DevMoath/ar-num-to-en-num.git"
+    },
+    "bugs": {
+        "url": "https://github.com/DevMoath/ar-num-to-en-num/issues"
+    },
+    "main": "src/index.js",
+    "files": [
+        "src/*.js"
+    ],
+    "scripts": {
+        "fixer": "npx prettier --write ."
+    },
+    "devDependencies": {
+        "prettier": "^2.3.2"
+    },
+    "keywords": [],
+    "publishConfig": {
+        "access": "public"
+    },
+    "prettier": {
+        "printWidth": 120,
+        "singleQuote": true,
+        "tabWidth": 4,
+        "trailingComma": "es5"
+    }
+}
