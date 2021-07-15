@@ -1,7 +1,11 @@
 const arabicNumbers = [/٠/g, /١/g, /٢/g, /٣/g, /٤/g, /٥/g, /٦/g, /٧/g, /٨/g, /٩/g];
 
-function convert(string) {
-    if (typeof string !== 'string') return string;
+/**
+ * @param {string} string
+ * @return string|boolean
+ */
+function convert (string) {
+    if (typeof string !== 'string') return false;
 
     let i = 0;
     for (; i < 10; i++) {

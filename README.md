@@ -26,7 +26,7 @@ const convert = require('@devmoath/ar-num-to-en-num');
 convert('test ١٢٣'); // test 123
 convert('كلمة ١٢٣'); // كلمة 123
 
-// if you pass non-string value the function will return it to you
-convert({}); // {}
-convert([]); // []
+// if you pass non-string value the function will return false
+convert({}); // false
+convert([]); // false
 ```
