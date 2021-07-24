@@ -1,6 +1,6 @@
 {
     "name": "@devmoath/ar-num-to-en-num",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "Convert Arabic numbers to English numbers",
     "license": "MIT",
     "author": "Moath <moath.alhajrii@gmail.com> (https://moath.dev/)",
@@ -12,20 +12,29 @@
     "bugs": {
         "url": "https://github.com/DevMoath/ar-num-to-en-num/issues"
     },
-    "main": "src/index.js",
-    "files": [
-        "src/*.js"
-    ],
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
     "scripts": {
         "fixer": "npx prettier --write .",
-        "test": "jest --verbose --coverage"
+        "test": "jest --verbose --coverage ./test",
+        "build": "tsc"
     },
     "devDependencies": {
-        "@types/jest": "^26.0.23",
+        "@babel/core": "^7.14.8",
+        "@babel/preset-env": "^7.14.8",
+        "@babel/preset-typescript": "^7.14.5",
+        "@types/jest": "^26.0.24",
+        "babel-jest": "^27.0.6",
         "jest": "^27.0.6",
-        "prettier": "^2.3.2"
+        "prettier": "^2.3.2",
+        "ts-node": "^10.1.0",
+        "typescript": "^4.3.5"
     },
-    "keywords": [],
+    "keywords": [
+        "converter",
+        "arabic number",
+        "english number"
+    ],
     "publishConfig": {
         "access": "public"
     },
@@ -34,5 +43,18 @@
         "singleQuote": true,
         "tabWidth": 4,
         "trailingComma": "es5"
+    },
+    "babel": {
+        "presets": [
+            [
+                "@babel/preset-env",
+                {
+                    "targets": {
+                        "node": "current"
+                    }
+                }
+            ],
+            "@babel/preset-typescript"
+        ]
     }
 }

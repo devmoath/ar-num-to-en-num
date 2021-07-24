@@ -1,4 +1,4 @@
-const convert = require('./index');
+const convert = require('../src/index');
 
 test('it can convert arabic numbers to english numbers', () => {
     expect(convert('test ١٢٣')).toBe('test 123');
