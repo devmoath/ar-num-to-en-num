@@ -1,6 +1,6 @@
 {
     "name": "@devmoath/ar-num-to-en-num",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "description": "Convert Arabic numbers to English numbers",
     "license": "MIT",
     "author": "Moath <moath.alhajrii@gmail.com> (https://moath.dev/)",

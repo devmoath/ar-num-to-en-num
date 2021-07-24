@@ -18,10 +18,10 @@ yarn add @devmoath/ar-num-to-en-num
 
 ```javascript
 // es module import:
-import convert from '@devmoath/ar-num-to-en-num';
+import { convert } from '@devmoath/ar-num-to-en-num';
 
 // commonjs import:
-const convert = require('@devmoath/ar-num-to-en-num');
+const convert = require('@devmoath/ar-num-to-en-num').convert;
 
 convert('test ١٢٣'); // test 123
 convert('كلمة ١٢٣'); // كلمة 123
