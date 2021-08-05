@@ -1,6 +1,6 @@
 {
     "name": "@devmoath/ar-num-to-en-num",
-    "version": "0.2.2",
+    "version": "0.3.0",
     "description": "Convert Arabic numbers to English numbers",
     "license": "MIT",
     "author": "Moath <moath.alhajrii@gmail.com> (https://moath.dev/)",
@@ -15,9 +15,11 @@
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "scripts": {
-        "fixer": "npx prettier --write .",
-        "test": "jest --verbose --coverage ./test",
-        "build": "tsc"
+        "fixer": "node_modules/.bin/prettier -w .",
+        "test": "jest",
+        "build": "tsc",
+        "release:publish": "npm i && npm run build && npm publish",
+        "release:test": "npm i && npm run build && npm test"
     },
     "devDependencies": {
         "@babel/core": "^7.14.8",
@@ -43,6 +45,10 @@
         "singleQuote": true,
         "tabWidth": 4,
         "trailingComma": "es5"
+    },
+    "jest": {
+        "verbose": true,
+        "collectCoverage": true
     },
     "babel": {
         "presets": [
