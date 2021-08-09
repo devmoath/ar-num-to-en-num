@@ -1,4 +1,4 @@
-# @devmoath/ar-num-to-en-num [![Node.js Package](https://github.com/DevMoath/ar-num-to-en-num/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/DevMoath/ar-num-to-en-num/actions/workflows/npm-publish.yml)
+# @devmoath/ar-num-to-en-num [![Node.js Package](https://github.com/DevMoath/ar-num-to-en-num/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/DevMoath/ar-num-to-en-num/actions/workflows/npm-publish.yml) ![npm](https://img.shields.io/npm/dt/@devmoath/ar-num-to-en-num)
 
 Convert Arabic numbers to English numbers
 
